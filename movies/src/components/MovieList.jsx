@@ -88,7 +88,7 @@ function MovieList() {
   return (
     <>
       <div className='header'>
-        <h1 className='header-title'>The collection of movies </h1>
+        <h1 className='header-title'>Movies Tracker </h1>
       </div>
       <div className='container-1'>
         <form className='date-form' onSubmit={handleDateSubmit}>
@@ -138,9 +138,9 @@ function MovieList() {
                   onClick={() => openModal(movie)}
                 />
                 <h5 className='card-title'>{movie.title}</h5>
-                <h4 className='card-release-date'>{movie.release_date}</h4>
+                <h4 className='card-release-date'>{movie.first_aired}</h4>
               </div>
-            ))
+            )) 
           ) : (
             <p>No movies available</p>
           )}
